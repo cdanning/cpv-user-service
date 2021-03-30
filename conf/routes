@@ -1,0 +1,11 @@
+
+
+GET /users service.controllers.UserController.getUsers()
+
+POST /users service.controllers.UserController.createUser()
+
+POST /users/user/:user/role/:role service.controllers.UserController.grantRole(user: service.models.User, role)
+
+DELETE /users/user/:user/role/:role service.controllers.UserController.revokeRole(user: service.models.User, role)
+
+DELETE /users/user/:user service.controllers.UserController.deleteUser(user: service.models.User)
